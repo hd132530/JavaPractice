@@ -18,6 +18,13 @@ public class Operation {
 		p = (double)(pa*ph);
 		System.out.printf("사다리꼴의 넓이 %.1f \n", s);
 		System.out.printf("평행사변형의 넓이 %.1f \n", p);
-	}
-
+		
+		boolean flag = true;
+		if(flag || (s >= p))
+			System.out.printf("사다리꼴이 평행 사변형 보다 %.1f만큼 큽니다.", s-p);
+		else
+			System.out.printf("평행사변형이 사다리꼴 보다 %.1f 만큼 큽니다.", p-s);
+		
+		}
+	
 }
