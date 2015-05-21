@@ -64,6 +64,9 @@ public class Snack {
 			System.out.println("수량 : " + number + "개");
 			
 		}
+		public int Totprice(){
+			return price * number;
+		}
 		
 }
 		

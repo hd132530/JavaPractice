@@ -18,6 +18,7 @@ package org.dimigo.oop;
  */
 public class SnackTest {
 	public static void main(String[] args){
+		int tot = 0;
 		Snack[] snaArr = new Snack[]{
 				new Snack("새우깡", "농심", 1100, 2),
 				new Snack("콘칲", "크라운", 1200, 1),
@@ -26,8 +27,11 @@ public class SnackTest {
 				
 				for(Snack snack : snaArr){
 					snack.printSnack();
+					
+					tot += snack.Totprice();
 				}
 				
-				System.out.println();
+				System.out.println("총 구매 금액 : " + String.format("%,d", tot) + "원");
+				System.out.println("");
 				}
 	}
