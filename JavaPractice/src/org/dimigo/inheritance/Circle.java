@@ -30,6 +30,6 @@ public class Circle extends Figure {
 	}
 	
 	protected double calcArea() {
-		return radius*radius*3.14;
+		return radius*radius*Math.PI;
 	}
 }
