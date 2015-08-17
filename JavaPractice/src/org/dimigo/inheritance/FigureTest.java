@@ -16,7 +16,8 @@ package org.dimigo.inheritance;
  * @author : Seungjin Jeong
  * @version : 1.0
  */
-public class FigureTest{
+public class FigureTest {
+	
 	public static void main(String[] args) {
 			
 			Circle c = new Circle(5);
