@@ -43,9 +43,12 @@ public class SmartPhone{
 	public void pay() {}
 	
 	public void useSpecialFunction() {
+		
 		if(this instanceof IPhone) {
 			((IPhone) this).useAirDrop();
-		} else if(this instanceof Galaxy) {
+		} 
+		
+		else if(this instanceof Galaxy) {
 			((Galaxy) this).userWirelessCharging();
 		}
 	}
